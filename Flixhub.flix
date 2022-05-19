@@ -109,7 +109,9 @@ function Luxt1.CreateWindow(libName, logoId)
     libName = libName or "BloxCheat"
     logoId = logoId or ""
     --
-
+if game.CoreGui:FindFirstChild("BloxCheat"..libName) then
+			game.CoreGui:FindFirstChild("BloxCheat"..libName):Destroy()
+end
     LuxtLib.Name = "BloxCheat"..libName
     LuxtLib.Parent = game.CoreGui
     LuxtLib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
