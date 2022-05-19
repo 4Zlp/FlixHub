@@ -106,11 +106,11 @@ function Luxt1.CreateWindow(libName, logoId)
     pageFolder.Parent = framesAll
 
     --
-    libName = libName or "LuxtLib"
+    libName = libName or "BloxCheat"
     logoId = logoId or ""
     --
 
-    LuxtLib.Name = "LuxtLib"..libName
+    LuxtLib.Name = "BloxCheat"..libName
     LuxtLib.Parent = game.CoreGui
     LuxtLib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
